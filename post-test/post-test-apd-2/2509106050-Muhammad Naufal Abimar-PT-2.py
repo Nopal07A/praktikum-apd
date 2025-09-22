@@ -39,7 +39,6 @@ print(f"Suhu 3 ({suhu_3}°C) = {k3:.2f} K")
 print(f"Suhu 4 ({suhu_4}°C) = {k4:.2f} K")
 print(f"Suhu 5 ({suhu_5}°C) = {r5:.2f} R")
 print(f"Suhu 6 ({suhu_6}°C) = {r6:.2f} R")
-
 print(f"Jumlah semua suhu  = {jumlah}")
 print(f"Rata-rata suhu = {rata_rata}")
 print(f"perbandingan variabel = {nim<rata_rata}")
