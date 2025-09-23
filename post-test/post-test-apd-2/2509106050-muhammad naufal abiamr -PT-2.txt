@@ -1,0 +1,6 @@
+1)git add
+     git add adalah memindahkan  perubahan yang telah di buat 
+2)git commit
+      git commit adalah proses untuk menyimpan perubahan yang sudah di buat pada proyek ke dalam repositori lokal dengan memberikan pesan deskriptif yang menjelaskan perubahan tersebut
+3)git push
+      git push adalah perintah yang digunakan untuk mengunggah commit (perubahan yang telah disimpan) ke repositori
