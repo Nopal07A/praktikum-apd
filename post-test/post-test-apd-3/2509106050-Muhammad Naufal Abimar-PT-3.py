@@ -128,27 +128,27 @@ elif konversi == "5":
     if pilihan == "a":
         nilai = float(input("Masukkan nilai (Rp): "))
         hasil = nilai / 16703
-        print("Rp", nilai, "=", hasil, "USD")
+        print( nilai, "Rp= ", hasil, "USD")
     elif pilihan == "b":
         nilai = float(input("Masukkan nilai (USD): "))
         hasil = nilai * 16703
-        print(nilai, "USD =", "Rp", hasil)
+        print(nilai, "USD = ", hasil, "rp")
     elif pilihan == "c":
         nilai = float(input("Masukkan nilai (Rp): "))
         hasil = nilai / 111.56
-        print("Rp", nilai, "=", hasil, "JPY")
+        print(nilai, "Rp = ", hasil, "JPY")
     elif pilihan == "d":
         nilai = float(input("Masukkan nilai (JPY): "))
         hasil = nilai * 111.56
-        print(nilai, "JPY =", "Rp", hasil)
+        print(nilai, "JPY = ", hasil, "rp")
     elif pilihan == "e":
         nilai = float(input("Masukkan nilai (Rp): "))
         hasil = nilai / 11.83
-        print("Rp", nilai, "=", hasil, "KRW")
+        print(nilai, "rp = ", hasil, "KRW")
     elif pilihan == "f":
         nilai = float(input("Masukkan nilai (KRW): "))
         hasil = nilai * 11.83
-        print(nilai, "KRW =", "Rp", hasil)
+        print(nilai, "KRW = ", hasil, "rp")
     else:
         print("Pilihan tidak ada.")
 
