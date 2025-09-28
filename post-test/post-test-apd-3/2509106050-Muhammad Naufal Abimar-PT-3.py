@@ -13,7 +13,7 @@ elif username != ussername and Password == password:
 else:
     print ("login gagal cek username dan password anda")
 
-print("=== Program Konversi Satuan ===")
+print("=== Program Konversi ===")
 print("1. konversi Panjang")
 print("2. konversi Massa")
 print("3. konversi Suhu")
