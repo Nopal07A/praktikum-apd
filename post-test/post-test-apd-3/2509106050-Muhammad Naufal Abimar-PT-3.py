@@ -2,7 +2,7 @@ username = "nopal"
 Password = "050"
 
 ussername = input("masukkan ussername anda:")
-password = input ("masukkan password anda:")
+password  = input("masukkan password anda:")
 
 if ussername == username and password == Password:
     print("login berhasil")
