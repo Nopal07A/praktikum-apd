@@ -6,6 +6,13 @@ password  = input("masukkan password anda:")
 
 if ussername == username and password == Password:
     print("login berhasil")
+    print("=== Program Konversi ===")
+    print("1. konversi Panjang")
+    print("2. konversi Massa")
+    print("3. konversi Suhu")
+    print("4. konversi Waktu")
+    print("5. konversi mata uang")
+    konversi = input("Pilih konversi yang di inginkan (1-5): ")
 elif username == ussername and Password != password:
     print("password anda salah")
 elif username != ussername and Password == password:
@@ -13,15 +20,7 @@ elif username != ussername and Password == password:
 else:
     print ("login gagal cek username dan password anda")
 
-print("=== Program Konversi ===")
-print("1. konversi Panjang")
-print("2. konversi Massa")
-print("3. konversi Suhu")
-print("4. konversi Waktu")
-print("5. konversi mata uang")
-
-konversi = input("Pilih konversi yang di inginkan (1-5): ")
-
+print ("login anda gagal")
 if konversi == "1":
     print("--- Konversi Panjang ---")
     print("a. Feet -> Meter")
