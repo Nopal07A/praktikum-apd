@@ -31,7 +31,7 @@ if konversi == "1":
 
     if pilihan == "a":
         nilai = float(input("Masukkan nilai (feet): "))
-        hasil = nilai * 0.305
+        hasil = nilai * 0.3048
         print(nilai, "feet =", hasil, "meter")
     elif pilihan == "b":
         nilai = float(input("Masukkan nilai (km): "))
@@ -55,7 +55,7 @@ elif konversi == "2":
 
     if pilihan == "a":
         nilai = float(input("Masukkan nilai (pound): "))
-        hasil = nilai * 0.454
+        hasil = nilai * 2.2
         print(nilai, "pound =", hasil, "kg")
     elif pilihan == "b":
         nilai = float(input("Masukkan nilai (ton): "))
