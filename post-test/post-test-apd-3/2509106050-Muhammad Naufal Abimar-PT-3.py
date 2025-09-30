@@ -51,7 +51,7 @@ elif konversi == "2":
     print("c. Gram -> Kilogram")
     print("d. hektogram -> kilogram")
     print("e. dekagram -> kilogram")
-    pilihan = input("Pilih konversi (a - c): ")
+    pilihan = input("Pilih konversi (a - e): ")
 
     if pilihan == "a":
         nilai = float(input("Masukkan nilai (pound): "))
