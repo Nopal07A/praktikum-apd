@@ -86,12 +86,12 @@ while True:
         print("Golongan darah tidak valid!")
     
     
-    lanjut = input("\nApakah anda masih mau input lagi (Y/T)? ")
-    if lanjut == "T":
+    perulangan= input("Apakah anda masih mau input lagi (Y/T)? ")
+    if perulangan == "T":
         break
 
 
-print("\n===== TOTAL JUMLAH DARAH =====")
+print("===== TOTAL JUMLAH DARAH =====")
 print(f"Golongan A+  : {total_A_plus} ml")
 print(f"Golongan A-  : {total_A_minus} ml")
 print(f"Golongan B+  : {total_B_plus} ml")
