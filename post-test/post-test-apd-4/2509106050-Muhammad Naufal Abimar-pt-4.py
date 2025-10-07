@@ -28,7 +28,7 @@ print("===== PROGRAM INPUT GOLONGAN DARAH =====")
 
 while True:
     print("\n--- Input Data Donor ---")
-    golongan = input("Masukkan golongan darah (A/B/AB/O): ").upper()
+    golongan = input("Masukkan golongan darah (A/B/AB/O): ")
     
     if golongan == "A":
         rhesus = input("Masukkan Rhesus (+/-): ")
