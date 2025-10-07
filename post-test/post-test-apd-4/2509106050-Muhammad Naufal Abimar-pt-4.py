@@ -27,7 +27,7 @@ total_O_minus = 0
 print("===== PROGRAM INPUT GOLONGAN DARAH =====")
 
 while True:
-    print("\n--- Input Data Donor ---")
+    print("--- Input Data Donor ---")
     golongan = input("Masukkan golongan darah (A/B/AB/O): ")
     
     if golongan == "A":
@@ -86,7 +86,7 @@ while True:
         print("Golongan darah tidak valid!")
     
     
-    lanjut = input("\nApakah anda masih mau input lagi (Y/T)? ").upper()
+    lanjut = input("\nApakah anda masih mau input lagi (Y/T)? ")
     if lanjut == "T":
         break
 
