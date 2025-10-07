@@ -1,4 +1,4 @@
-print("===== PROGRAM LOGIN =====")
+print("===== LOGIN =====")
 while True:
     username = input("Username: ")
     password = input("Password: ")
