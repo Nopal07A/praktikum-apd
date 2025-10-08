@@ -8,10 +8,18 @@ if ussername == username and password == Password:
     print("login berhasil")
 elif username == ussername and Password != password:
     print("password anda salah")
+    exit
 elif username != ussername and Password == password:
     print("username anda salah")
+    exit
 else:
     print ("login gagal cek username dan password anda")
+    exit
+
+
+
+
+
 
 print("=== Program Konversi ===")
 print("1. konversi Panjang")

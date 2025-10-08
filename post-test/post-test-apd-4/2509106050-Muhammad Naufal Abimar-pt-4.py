@@ -12,7 +12,7 @@ while True:
     elif username != "nopal":
         print("Hanya username yang salah! Silakan coba lagi.")
     else:
-        print("Username atau Password salah!")
+        print("Password salah!")
         print("Coba lagi")
 
 total_A_plus = 0
