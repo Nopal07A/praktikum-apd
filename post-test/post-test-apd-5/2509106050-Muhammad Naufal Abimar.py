@@ -52,9 +52,7 @@ def tambah_hero():
             else:
                 print("\nNama hero tidak boleh kosong!")
         else:
-            print("\nPilihan role tidak valid!")
-    else:
-        print("\nInput harus berupa angka 1-5!")
+            print("\nInput harus berupa angka 1-5!")
 
 def hapus_hero():
     tampilkan_hero()
@@ -88,8 +86,8 @@ def hapus_hero():
         print("\nInput harus berupa angka 1-5!")
 
 def menu_admin():
-    lanjut = True
-    while lanjut:
+    bool = True
+    while bool:
         print("\n" + "="*50)
         print("MENU ADMIN".center(50))
         print("="*50)
@@ -103,22 +101,22 @@ def menu_admin():
         
         if pilihan == "1":
             tampilkan_hero()
-            input("\nTekan enter untuk kembali...")
+            input("\nTekan enter untuk kembali")
         elif pilihan == "2":
             tambah_hero()
-            input("\nTekan enter untuk kembali...")
+            input("\nTekan enter untuk kembali")
         elif pilihan == "3":
             hapus_hero()
-            input("\nTekan enter untuk kembali...")
+            input("\nTekan enter untuk kembali")
         elif pilihan == "4":
             print("\nLogout berhasil!")
-            lanjut = False
+            bool = False
         else:
             print("\nPilihan tidak valid!")
 
 def menu_user():
-    lanjut = True
-    while lanjut:
+    bool = True
+    while bool:
         print("\n" + "="*50)
         print("MENU USER".center(50))
         print("="*50)
@@ -133,7 +131,7 @@ def menu_user():
             input("\nTekan enter untuk kembali...")
         elif pilihan == "2":
             print("\nLogout berhasil!")
-            lanjut = False
+            bool = False
         else:
             print("\nPilihan tidak valid!")
 
