@@ -69,7 +69,7 @@ while bool:
                         for j in range(len(list_hero_meta[i])):
                             print(f"   {j+1}. {list_hero_meta[i][j]}")
                     print("="*50)
-                    input("\nTekan enter untuk kembali...")
+                    input("\nTekan enter untuk kembali")
                     
                 elif pilihan == "2":
                     print("\nLogout berhasil!")
