@@ -13,8 +13,8 @@ pengguna_baru = []
 user = "nopal"
 pw = "050"
 
-bool_main = True
-while bool_main:
+bool = True
+while bool:
     print("\n" + "="*50)
     print("SISTEM MANAGEMENT HERO META".center(50))
     print("="*50)
@@ -49,8 +49,8 @@ while bool_main:
             input("\nTekan enter untuk lanjutkan program")
             
             
-            bool_user = True
-            while bool_user:
+            bool = True
+            while bool:
                 print("\n" + "="*50)
                 print("MENU USER".center(50))
                 print("="*50)
@@ -73,7 +73,7 @@ while bool_main:
                     
                 elif pilihan == "2":
                     print("\nLogout berhasil!")
-                    bool_user = False
+                    bool = False
                 else:
                     print("\nPilihan tidak valid!")
         else:
@@ -88,8 +88,8 @@ while bool_main:
             print(f"\nSelamat datang, Admin {usn_input}!")
             
             
-            bool_admin = True
-            while bool_admin:
+            bool = True
+            while bool:
                 print("\n" + "="*50)
                 print("MENU ADMIN".center(50))
                 print("="*50)
@@ -186,7 +186,7 @@ while bool_main:
                     
                 elif pilihan == "4":
                     print("\nLogout berhasil!")
-                    bool_admin = False
+                    bool = False
                 else:
                     print("\nPilihan tidak valid!")
         else:
@@ -196,6 +196,6 @@ while bool_main:
         print("\n" + "="*50)
         print("Terima kasih telah menggunakan program!".center(50))
         print("="*50)
-        bool_main = False
+        bool = False
     else:
         print("\nPilihan tidak valid! Silakan pilih 1-4")
