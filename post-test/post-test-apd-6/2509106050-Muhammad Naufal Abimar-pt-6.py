@@ -121,7 +121,7 @@ while bool:
                     print("\n=== TAMBAH HERO BARU ===")
                     role_pilih = input(f"\nPilih role (1-{len(hero_meta)}): ")
                     
-                    try:
+                    if role_pilih.isdigit():
                         role_idx = int(role_pilih) - 1
                         if 0 <= role_idx < len(roles_list):
                             role_terpilih = roles_list[role_idx]
@@ -143,7 +143,7 @@ while bool:
                                 print("\nNama hero tidak boleh kosong!")
                         else:
                             print("\nPilihan role tidak valid!")
-                    except ValueError:
+                    else:
                         print("\nInput harus berupa angka 1-5!")
                     input("\nTekan enter untuk kembali")
                     
@@ -162,7 +162,7 @@ while bool:
                     print("\n=== HAPUS HERO ===")
                     role_pilih = input(f"\nPilih role (1-{len(hero_meta)}): ")
                     
-                    try:
+                    if role_pilih.isdigit():
                         role_idx = int(role_pilih) - 1
                         if 0 <= role_idx < len(roles_list):
                             role_terpilih = roles_list[role_idx]
@@ -176,17 +176,21 @@ while bool:
                                     print(f"{i+1}. {heroes[i]}")
                                 
                                 hero_pilih = input(f"\nPilih hero yang ingin dihapus (1-{len(hero_meta[role_terpilih])}): ")
-                                hero_idx = int(hero_pilih) - 1
                                 
-                                if 0 <= hero_idx < len(hero_meta[role_terpilih]):
-                                    hero_dihapus = hero_meta[role_terpilih][hero_idx]
-                                    hero_meta[role_terpilih].pop(hero_idx)
-                                    print(f"\nHero '{hero_dihapus}' berhasil dihapus dari role {role_terpilih}!")
+                                if hero_pilih.isdigit():
+                                    hero_idx = int(hero_pilih) - 1
+                                    
+                                    if 0 <= hero_idx < len(hero_meta[role_terpilih]):
+                                        hero_dihapus = hero_meta[role_terpilih][hero_idx]
+                                        hero_meta[role_terpilih].pop(hero_idx)
+                                        print(f"\nHero '{hero_dihapus}' berhasil dihapus dari role {role_terpilih}!")
+                                    else:
+                                        print("\nPilihan hero tidak valid!")
                                 else:
-                                    print("\nPilihan hero tidak valid!")
+                                    print("\nInput harus berupa angka!")
                         else:
                             print("\nPilihan role tidak valid!")
-                    except ValueError:
+                    else:
                         print("\nInput harus berupa angka 1-5!")
                     input("\nTekan enter untuk kembali")
                     
