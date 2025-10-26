@@ -29,7 +29,7 @@ def cari_hero(nama):
     for role in hero_meta:
         if nama in hero_meta[role]:
             return True, role
-    return False, ""
+    return False, 
 
 def hitung_hero():
     total = 0
