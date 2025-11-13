@@ -1,14 +1,12 @@
 from data import hero_meta, pengguna_baru
 
-# FUNGSI LOGIN
-def cek_login(user, pw, tipe):
+def cek_login(usser, pw, tipe):
     if tipe == "user":
-        return user in pengguna_baru and pengguna_baru[user] == pw
+        return usser in pengguna_baru and pengguna_baru[usser] == pw
     elif tipe == "admin":
-        return user == "admin" and pw == "admin123"
+        return usser == "admin" and pw == "admin123"
     return False
 
-# FUNGSI DAFTAR USER
 def daftar_user():
     print("\n=== DAFTAR USER BARU ===")
     user_baru = input("Username: ")
@@ -30,7 +28,6 @@ def daftar_user():
     pengguna_baru[user_baru] = pw_baru
     print("Berhasil daftar!")
 
-# FUNGSI TAMPILKAN HERO
 def tampilkan_hero():
     print("\n" + "="*50)
     print("DAFTAR HERO META")
@@ -39,19 +36,19 @@ def tampilkan_hero():
     nomor = 1
     for role in hero_meta:
         print(f"\n{nomor}. {role}:")
-        for i, hero in enumerate(hero_meta[role], 1):
+        i = 1
+        for hero in hero_meta[role]:
             print(f"   {i}. {hero}")
+            i += 1
         nomor += 1
     print("="*50)
 
-# FUNGSI CARI HERO
 def cari_hero(nama):
     for role in hero_meta:
         if nama in hero_meta[role]:
             return True, role
     return False, None
 
-# FUNGSI STATISTIK
 def tampilkan_statistik():
     print("\n" + "="*50)
     print("STATISTIK HERO")
@@ -67,15 +64,15 @@ def tampilkan_statistik():
     print(f"Total Role: {len(hero_meta)}")
     print("="*50)
 
-# FUNGSI TAMBAH HERO (ADMIN)
 def tambah_hero():
     tampilkan_hero()
     print("\n=== TAMBAH HERO ===")
     
-    # Tampilkan pilihan role
     role_list = list(hero_meta.keys())
-    for i, role in enumerate(role_list, 1):
+    i = 1
+    for role in role_list:
         print(f"{i}. {role}")
+        i += 1
     
     pilih = input(f"\nPilih role (1-{len(role_list)}): ")
     
@@ -95,7 +92,6 @@ def tambah_hero():
         print("Nama tidak boleh kosong!")
         return
     
-    # Cek apakah hero sudah ada
     ada, role_lama = cari_hero(nama)
     if ada:
         print(f"Hero sudah ada di {role_lama}!")
@@ -104,15 +100,15 @@ def tambah_hero():
     hero_meta[role_dipilih].append(nama)
     print(f"Hero '{nama}' berhasil ditambahkan!")
 
-# FUNGSI HAPUS HERO (ADMIN)
 def hapus_hero():
     tampilkan_hero()
     print("\n=== HAPUS HERO ===")
     
-    # Tampilkan pilihan role
     role_list = list(hero_meta.keys())
-    for i, role in enumerate(role_list, 1):
+    i = 1
+    for role in role_list:
         print(f"{i}. {role}")
+        i += 1
     
     pilih = input(f"\nPilih role (1-{len(role_list)}): ")
     
@@ -131,10 +127,11 @@ def hapus_hero():
         print("Tidak ada hero!")
         return
     
-    # Tampilkan hero di role tersebut
     print(f"\nHero di {role_dipilih}:")
-    for i, hero in enumerate(hero_meta[role_dipilih], 1):
+    i = 1
+    for hero in hero_meta[role_dipilih]:
         print(f"{i}. {hero}")
+        i += 1
     
     pilih_hero = input(f"\nPilih hero (1-{len(hero_meta[role_dipilih])}): ")
     
