@@ -7,6 +7,7 @@ def cek_login(usser, pw, tipe):
         return usser == "admin" and pw == "admin123"
     return False
 
+
 def daftar_user():
     print("\n=== DAFTAR USER BARU ===")
     user_baru = input("Username: ")
@@ -28,6 +29,7 @@ def daftar_user():
     pengguna_baru[user_baru] = pw_baru
     print("Berhasil daftar!")
 
+
 def tampilkan_hero():
     print("\n" + "="*50)
     print("DAFTAR HERO META")
@@ -43,11 +45,13 @@ def tampilkan_hero():
         nomor += 1
     print("="*50)
 
+
 def cari_hero(nama):
     for role in hero_meta:
         if nama in hero_meta[role]:
             return True, role
     return False, None
+
 
 def tampilkan_statistik():
     print("\n" + "="*50)
@@ -64,9 +68,11 @@ def tampilkan_statistik():
     print(f"Total Role: {len(hero_meta)}")
     print("="*50)
 
+
 def tambah_hero():
     tampilkan_hero()
     print("\n=== TAMBAH HERO ===")
+
     
     role_list = list(hero_meta.keys())
     i = 1
@@ -92,6 +98,7 @@ def tambah_hero():
         print("Nama tidak boleh kosong!")
         return
     
+    
     ada, role_lama = cari_hero(nama)
     if ada:
         print(f"Hero sudah ada di {role_lama}!")
@@ -100,9 +107,11 @@ def tambah_hero():
     hero_meta[role_dipilih].append(nama)
     print(f"Hero '{nama}' berhasil ditambahkan!")
 
+
 def hapus_hero():
     tampilkan_hero()
     print("\n=== HAPUS HERO ===")
+
     
     role_list = list(hero_meta.keys())
     i = 1
@@ -126,6 +135,7 @@ def hapus_hero():
     if len(hero_meta[role_dipilih]) == 0:
         print("Tidak ada hero!")
         return
+    
     
     print(f"\nHero di {role_dipilih}:")
     i = 1
